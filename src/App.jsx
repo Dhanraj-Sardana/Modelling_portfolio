@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
-
+import Act from "./components/Act";
 function App() {
   return (
     <>
@@ -19,14 +19,19 @@ function App() {
         <About></About>
       </section>
 
-     
-       <Gallery /> 
+     <section
+        id="gallery"
+        className="min-h-screen bg-gray-100 "
+      >
+        <Gallery />
+      </section>
+       
 
       <section
         id="portfolio"
-        className="h-screen bg-gray-400 flex items-center justify-center"
+        className="min-h-screen bg-gray-400 "
       >
-        <h2 className="text-4xl font-bold">Acting</h2>
+        <Act/>
       </section>
 
       <section
